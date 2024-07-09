@@ -10,6 +10,7 @@
         "laravel/tinker": "^2.9",
         "livewire/livewire": "^3.5",
         "masmerise/livewire-toaster": "^2.2",
+        "robsontenorio/mary": "^1.34",
         "secondnetwork/blade-tabler-icons": "^3.9",
         "spatie/laravel-permission": "^6.9"
     },

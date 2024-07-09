@@ -5,7 +5,8 @@
         </label>
     </div>
     <div class="navbar-center">
-        <a href="{{ route('home') }}" class="text-xl btn btn-ghost" wire:navigate>{{ config('app.name') }}</a>
+        <a href="{{ route('home') }}" class="text-xl no-animation btn btn-ghost"
+            wire:navigate>{{ config('app.name') }}</a>
     </div>
     <div class="navbar-end">
         <button wire:click="logout" class="btn btn-ghost btn-circle" href="" wire:navigate>

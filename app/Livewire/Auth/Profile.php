@@ -5,10 +5,15 @@ namespace App\Livewire\Auth;
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\Rule;
+use Livewire\Attributes\Title;
 use Livewire\Component;
+use Masmerise\Toaster\Toastable;
 
+#[Title('Categories')]
 class Profile extends Component
 {
+    use Toastable;
+
     public string $name;
 
     public string $email;
@@ -39,6 +44,7 @@ class Profile extends Component
         }
         $this->user->update($data);
         $this->reset();
+        $this->success('User saved');
         $this->redirect(route('profile'), true);
     }
 
