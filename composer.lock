@@ -4,8 +4,89 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0a6e3c5e985fc7375fa674c3cc594a7b",
+    "content-hash": "08bc732d8c66cd2fc4fd64a489c6ed9c",
     "packages": [
+        {
+            "name": "blade-ui-kit/blade-icons",
+            "version": "1.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/blade-ui-kit/blade-icons.git",
+                "reference": "89660d93f9897d231e9113ba203cd17f4c5efade"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/blade-ui-kit/blade-icons/zipball/89660d93f9897d231e9113ba203cd17f4c5efade",
+                "reference": "89660d93f9897d231e9113ba203cd17f4c5efade",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "^8.0|^9.0|^10.0|^11.0",
+                "illuminate/filesystem": "^8.0|^9.0|^10.0|^11.0",
+                "illuminate/support": "^8.0|^9.0|^10.0|^11.0",
+                "illuminate/view": "^8.0|^9.0|^10.0|^11.0",
+                "php": "^7.4|^8.0",
+                "symfony/console": "^5.3|^6.0|^7.0",
+                "symfony/finder": "^5.3|^6.0|^7.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.5.1",
+                "orchestra/testbench": "^6.0|^7.0|^8.0|^9.0",
+                "phpunit/phpunit": "^9.0|^10.5|^11.0"
+            },
+            "bin": [
+                "bin/blade-icons-generate"
+            ],
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "BladeUI\\Icons\\BladeIconsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "BladeUI\\Icons\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dries Vints",
+                    "homepage": "https://driesvints.com"
+                }
+            ],
+            "description": "A package to easily make use of icons in your Laravel Blade views.",
+            "homepage": "https://github.com/blade-ui-kit/blade-icons",
+            "keywords": [
+                "blade",
+                "icons",
+                "laravel",
+                "svg"
+            ],
+            "support": {
+                "issues": "https://github.com/blade-ui-kit/blade-icons/issues",
+                "source": "https://github.com/blade-ui-kit/blade-icons"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sponsors/driesvints",
+                    "type": "github"
+                },
+                {
+                    "url": "https://www.paypal.com/paypalme/driesvints",
+                    "type": "paypal"
+                }
+            ],
+            "time": "2024-02-07T16:09:20+00:00"
+        },
         {
             "name": "brick/math",
             "version": "0.12.1",
@@ -1817,6 +1898,153 @@
             "time": "2024-01-28T23:22:08+00:00"
         },
         {
+            "name": "livewire/livewire",
+            "version": "v3.5.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/livewire/livewire.git",
+                "reference": "636725c1f87bc7844dd80277488268db27eec1aa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/livewire/livewire/zipball/636725c1f87bc7844dd80277488268db27eec1aa",
+                "reference": "636725c1f87bc7844dd80277488268db27eec1aa",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "^10.0|^11.0",
+                "illuminate/routing": "^10.0|^11.0",
+                "illuminate/support": "^10.0|^11.0",
+                "illuminate/validation": "^10.0|^11.0",
+                "league/mime-type-detection": "^1.9",
+                "php": "^8.1",
+                "symfony/console": "^6.0|^7.0",
+                "symfony/http-kernel": "^6.2|^7.0"
+            },
+            "require-dev": {
+                "calebporzio/sushi": "^2.1",
+                "laravel/framework": "^10.15.0|^11.0",
+                "laravel/prompts": "^0.1.6",
+                "mockery/mockery": "^1.3.1",
+                "orchestra/testbench": "^8.21.0|^9.0",
+                "orchestra/testbench-dusk": "^8.24|^9.1",
+                "phpunit/phpunit": "^10.4",
+                "psy/psysh": "^0.11.22|^0.12"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Livewire\\LivewireServiceProvider"
+                    ],
+                    "aliases": {
+                        "Livewire": "Livewire\\Livewire"
+                    }
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "Livewire\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Caleb Porzio",
+                    "email": "calebporzio@gmail.com"
+                }
+            ],
+            "description": "A front-end framework for Laravel.",
+            "support": {
+                "issues": "https://github.com/livewire/livewire/issues",
+                "source": "https://github.com/livewire/livewire/tree/v3.5.2"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/livewire",
+                    "type": "github"
+                }
+            ],
+            "time": "2024-07-03T17:22:45+00:00"
+        },
+        {
+            "name": "masmerise/livewire-toaster",
+            "version": "2.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/masmerise/livewire-toaster.git",
+                "reference": "6a610413da47ea6306afc1bce35d1dbe19a15ea2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/masmerise/livewire-toaster/zipball/6a610413da47ea6306afc1bce35d1dbe19a15ea2",
+                "reference": "6a610413da47ea6306afc1bce35d1dbe19a15ea2",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "^11.0",
+                "livewire/livewire": "^3.0",
+                "php": "~8.3"
+            },
+            "conflict": {
+                "stevebauman/unfinalize": "*"
+            },
+            "require-dev": {
+                "dive-be/php-crowbar": "^1.0",
+                "larastan/larastan": "^2.0",
+                "laravel/pint": "^1.0",
+                "orchestra/testbench": "^9.0",
+                "phpunit/phpunit": "^10.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "aliases": {
+                        "Toaster": "Masmerise\\Toaster\\Toaster"
+                    },
+                    "providers": [
+                        "Masmerise\\Toaster\\ToasterServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Masmerise\\Toaster\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Muhammed Sari",
+                    "email": "support@muhammedsari.me",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Beautiful toast notifications for Laravel / Livewire.",
+            "homepage": "https://github.com/masmerise/livewire-toaster",
+            "keywords": [
+                "alert",
+                "laravel",
+                "livewire",
+                "toast",
+                "toaster"
+            ],
+            "support": {
+                "issues": "https://github.com/masmerise/livewire-toaster/issues",
+                "source": "https://github.com/masmerise/livewire-toaster/tree/2.2.1"
+            },
+            "time": "2024-04-09T10:51:09+00:00"
+        },
+        {
             "name": "monolog/monolog",
             "version": "3.7.0",
             "source": {
@@ -3107,6 +3335,64 @@
                 }
             ],
             "time": "2024-04-27T21:32:50+00:00"
+        },
+        {
+            "name": "secondnetwork/blade-tabler-icons",
+            "version": "v3.9.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/secondnetwork/blade-tabler-icons.git",
+                "reference": "34d701a793c7c15975ec33fac8cb7c1581f27cb4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/secondnetwork/blade-tabler-icons/zipball/34d701a793c7c15975ec33fac8cb7c1581f27cb4",
+                "reference": "34d701a793c7c15975ec33fac8cb7c1581f27cb4",
+                "shasum": ""
+            },
+            "require": {
+                "blade-ui-kit/blade-icons": "^1.1|^1.5|^1.6",
+                "illuminate/support": "^8.0|^9.0|^10.0|^11.0",
+                "php": "^7.4|^8.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^6.0|^7.0|^9.0",
+                "phpunit/phpunit": "^9.0|^10.0|^11.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "secondnetwork\\TablerIcons\\BladeTablerIconsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "secondnetwork\\TablerIcons\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Andreas Farah"
+                }
+            ],
+            "description": "A package to easily make use of tabler-icons in your Laravel Blade views.",
+            "homepage": "https://github.com/secondnetwork/blade-tabler-icons",
+            "keywords": [
+                "blade",
+                "laravel",
+                "tabler-icons"
+            ],
+            "support": {
+                "issues": "https://github.com/secondnetwork/blade-tabler-icons/issues",
+                "source": "https://github.com/secondnetwork/blade-tabler-icons/tree/v3.9.0"
+            },
+            "time": "2024-07-05T13:40:33+00:00"
         },
         {
             "name": "symfony/clock",
