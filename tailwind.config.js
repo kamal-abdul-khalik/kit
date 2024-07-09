@@ -4,9 +4,14 @@ export default {
         "./resources/**/*.blade.php",
         "./resources/**/*.js",
         "./resources/**/*.vue",
+        "./vendor/masmerise/livewire-toaster/resources/views/*.blade.php",
     ],
     theme: {
         extend: {},
     },
-    plugins: [require("daisyui")],
+    plugins: [require("daisyui"), require("tailwind-scrollbar-hide")],
+    daisyui: {
+        themes: ["bumblebee"],
+    },
+    // scrollbarHide: true,
 };
