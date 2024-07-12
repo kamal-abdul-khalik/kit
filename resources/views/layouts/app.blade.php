@@ -7,6 +7,12 @@
 
         <title>{{ $title ?? config('app.name') }}</title>
         @vite(['resources/css/app.css', 'resources/js/app.js'])
+        {{-- Cropper.js --}}
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.6.1/cropper.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.6.1/cropper.min.css" />
+        {{-- TinyMCE --}}
+        <script src="https://cdn.tiny.cloud/1/y2ftlfjmbel70u9jkkkqt28ohxcprtq5bg4bwymi7n76w68d/tinymce/6/tinymce.min.js"
+            referrerpolicy="origin"></script>
     </head>
 
     <body class="min-h-screen bg-base-200">
@@ -34,8 +40,8 @@
         @guest
             <div class="flex flex-col items-center justify-center h-screen gap-8 print:hidden">
                 <x-logo />
-                    <h1 class="text-4xl font-bold">{{ config('app.name') }}</h1>
-                    {{ $slot }}
+                <h1 class="text-4xl font-bold">{{ config('app.name') }}</h1>
+                {{ $slot }}
             </div>
         @endguest
         <x-toaster-hub />

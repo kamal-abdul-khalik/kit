@@ -12,8 +12,8 @@
                     placeholder="Isi jika ingin mengubah password" />
             </div>
             <div class="justify-end card-actions">
-                <x-button type="submit" class="btn-primary btn-sm">
-                    <x-tabler-check class="size-5" />
+                <x-button type="submit" class="btn-primary btn-sm" spinner="save">
+                    <x-tabler-check class="size-5" wire:loading.attr="hidden" />
                     <span>Simpan</span>
                 </x-button>
             </div>

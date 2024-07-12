@@ -14,7 +14,7 @@
             </summary>
             <ul class="space-y-1">
                 <li>
-                    <a href="{{ route('posts.index') }}" wire:navigate @class(['active' => Route::is('posts.index')])>Blog</a>
+                    <a href="{{ route('posts.index') }}" wire:navigate @class(['active' => Route::is('posts.*')])>Blog</a>
                 </li>
                 <li>
                     <a href="{{ route('categories.index') }}" wire:navigate @class(['active' => Route::is('categories.index')])>Kategori

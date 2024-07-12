@@ -15,5 +15,7 @@ Route::middleware('auth')->group(function () {
 
 Route::group(['middleware' => ['auth']], function () {
     Route::get('/posts', \App\Livewire\Post\Index::class)->name('posts.index');
+    Route::get('/posts/create', \App\Livewire\Post\Actions::class)->name('posts.create');
+    Route::get('/posts/{post}/edit', \App\Livewire\Post\Actions::class)->name('posts.edit');
     Route::get('/categories', \App\Livewire\Category\Index::class)->name('categories.index');
 });

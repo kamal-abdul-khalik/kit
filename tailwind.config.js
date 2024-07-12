@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+    darkMode: "class",
     content: [
         "./resources/**/*.blade.php",
         "./resources/**/*.js",
@@ -14,7 +15,7 @@ export default {
     },
     plugins: [require("daisyui"), require("tailwind-scrollbar-hide")],
     daisyui: {
-        themes: ["bumblebee"],
+        themes: ["emerald"],
     },
     // scrollbarHide: true,
 };
